@@ -18,7 +18,7 @@ typedef unsigned uint;          /* unsigned integer */
     #define bool bool
 #endif 
 
-#define MAX_DIGITS (128)        /* maximum length of bignum */
+#define MAX_DIGITS (1024)        /* maximum length of bignum */
 #define POSITIVE   (+1)         /* positive sign bit */
 #define NEGATIVE   (-1)
 
@@ -257,7 +257,7 @@ int main(void)
 {
     int a, b;
     bignum n1, n2, n;
-    
+
     printf(PS1);
     while (scanf("%d %d", &a, &b) == 2) {
         printf("a  = %d\nb  = %d\n", a, b);
